@@ -6,13 +6,13 @@ export const NavLinks = [
 ]
 
 export const TechStackData = [
-  { title: 'Javascript', img: './js.svg' },
-  { title: 'Typescript', img: './ts.svg' },
-  { title: 'React', img: './react.svg' },
-  { title: 'NextJS', img: './nextjs.svg' },
-  { title: 'Angular', img: './angular.svg' },
-  { title: 'Sass', img: './sass.svg' },
-  { title: 'Tailwind', img: './tailwind.svg' }
+  { title: 'Javascript', img: '/js.svg' },
+  { title: 'Typescript', img: '/ts.svg' },
+  { title: 'React', img: '/react.svg' },
+  { title: 'NextJS', img: '/nextjs.svg' },
+  { title: 'Angular', img: '/angular.svg' },
+  { title: 'Sass', img: '/sass.svg' },
+  { title: 'Tailwind', img: '/tailwind.svg' }
 ]
 
 export const ProjectsData = [
@@ -23,8 +23,8 @@ export const ProjectsData = [
     description:
       'A modern and beautiful website made with Astro, React and The Astronomical Photo of The Day of NASA. In this website you can discover the Astronomical photo of the day and you can search the astronomical photo of your birth date. ',
     stack: [
-      { title: 'React', img: '/public/react.svg' },
-      { title: 'Tailwind', img: '/public/tailwind.svg' }
+      { title: 'React', img: '/react.svg' },
+      { title: 'Tailwind', img: '/tailwind.svg' }
     ]
   },
   {
@@ -34,8 +34,8 @@ export const ProjectsData = [
     description:
       'A modern and beautiful website made with Astro, React and The Astronomical Photo of The Day of NASA. In this website you can discover the Astronomical photo of the day and you can search the astronomical photo of your birth date. ',
     stack: [
-      { title: 'React', img: '/public/angular.svg' },
-      { title: 'Tailwind', img: '/public/tailwind.svg' }
+      { title: 'React', img: '/angular.svg' },
+      { title: 'Tailwind', img: '/tailwind.svg' }
     ]
   },
   ,
@@ -46,8 +46,8 @@ export const ProjectsData = [
     description:
       'A modern and beautiful website made with Astro, React and The Astronomical Photo of The Day of NASA. In this website you can discover the Astronomical photo of the day and you can search the astronomical photo of your birth date. ',
     stack: [
-      { title: 'NextJS', img: '/public/nextjs.svg' },
-      { title: 'Tailwind', img: '/public/tailwind.svg' }
+      { title: 'NextJS', img: '/nextjs.svg' },
+      { title: 'Tailwind', img: '/tailwind.svg' }
     ]
   }
 ]
@@ -55,21 +55,21 @@ export const ProjectsData = [
 export const TicketFlavors = [
   {
     title: 'React',
-    icon: '/public/react.svg',
+    icon: '/react.svg',
     borderColor: 'border-react',
     textColor: 'text-react',
     active: false
   },
   {
     title: 'NextJS',
-    icon: '/public/nextjs.svg',
+    icon: '/nextjs.svg',
     borderColor: 'border-black',
     textColor: 'text-black',
     active: false
   },
   {
     title: 'Angular',
-    icon: '/public/angular.svg',
+    icon: '/angular.svg',
     borderColor: 'border-angular',
     textColor: 'text-angular',
     active: true
