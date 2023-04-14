@@ -11,8 +11,10 @@ import { TechStackData } from '../utils/data'
       class='flex flex-col items-center text-center md:text-left md:items-start'>
       <h1 class='font-bold text-4xl md:text-6xl'>Front-End Developer</h1>
       <p class='md:w-3/4 text-gray-600 text-xl font-medium mt-4'>
-        Hi I’m Marco Gonzalez, A passionate Web Developer who wants to domain
-        the world with programming based on Ecuador 📍
+        Hi I’m Marco Gonzalez, <span id='desc'
+          >A passionate Web Developer
+        </span>who wants to domain the world with programming based on Ecuador
+        📍
       </p>
 
       <div class='flex items-center justify-start gap-x-4 mt-4'>
@@ -46,3 +48,14 @@ import { TechStackData } from '../utils/data'
   </div>
   <Blob />
 </Container>
+
+<script type='module'>
+  import { annotate } from '../../node_modules/rough-notation'
+
+  const descAnnotation = annotate(document.querySelector('#desc'), {
+    type: 'highlight', 
+    color: '#fd0'
+  })
+
+  descAnnotation.show()
+</script>

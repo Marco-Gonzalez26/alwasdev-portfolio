@@ -4,7 +4,7 @@ const activeSelector = proxy({
   title: 'React',
   borderColor: 'border-react',
   textColor: 'text-react',
-  icon: '/public/react.svg',
+  icon: '/react.svg',
   active: true
 })
 
