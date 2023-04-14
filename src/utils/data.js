@@ -6,13 +6,13 @@ export const NavLinks = [
 ]
 
 export const TechStackData = [
-  { title: 'Javascript', img: '/public/js.svg' },
-  { title: 'Typescript', img: '/public/ts.svg' },
-  { title: 'React', img: '/public/react.svg' },
-  { title: 'NextJS', img: '/public/nextjs.svg' },
-  { title: 'Angular', img: '/public/angular.svg' },
-  { title: 'Sass', img: '/public/sass.svg' },
-  { title: 'Tailwind', img: '/public/tailwind.svg' }
+  { title: 'Javascript', img: './js.svg' },
+  { title: 'Typescript', img: './ts.svg' },
+  { title: 'React', img: './react.svg' },
+  { title: 'NextJS', img: './nextjs.svg' },
+  { title: 'Angular', img: './angular.svg' },
+  { title: 'Sass', img: './sass.svg' },
+  { title: 'Tailwind', img: './tailwind.svg' }
 ]
 
 export const ProjectsData = [
