@@ -1,0 +1,36 @@
+<div
+  class='blob border-2 bg-white border-black overflow-hidden md:w-[450px] md:h-[450px] w-72 h-72 flex-shrink-0'>
+  <img class='w-full h-full' src='/public/me.jpg' />
+</div>
+
+<style>
+  .blob {
+    border-radius: 66% 34% 55% 45% / 30% 50% 50% 70%;
+
+    animation-name: blobby;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    display: block;
+  }
+
+  @keyframes blobby {
+    0% {
+      border-radius: 50%;
+    }
+    20% {
+      border-radius: 41% 59% 41% 59% / 53% 51% 49% 47%;
+    }
+    40% {
+      border-radius: 43% 57% 41% 59% / 53% 52% 48% 47%;
+    }
+    80% {
+      border-radius: 48% 52% 41% 59% / 48% 58% 42% 52%;
+    }
+    100% {
+      border-radius: 50%;
+    }
+  }
+</style>

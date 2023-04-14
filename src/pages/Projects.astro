@@ -1,0 +1,55 @@
+---
+import { ProjectsData } from '../utils/data'
+---
+
+<section
+  class='flex min-h-screen flex-col px-10 pt-16 pb-8 w-full items-center justify-center gap-y-8 md:px-20 bg-slate-50'
+  id='projects'>
+  <div class='flex flex-col items-start w-full'>
+    <h3 class='text-blue-600 font-bold text-xl md:text-left'>PROJECTS</h3>
+    <span class='font-bold text-3xl text-slate-600 md:text-left'>
+      I know good UX and UI means good business 💸
+    </span>
+  </div>
+
+  {
+    ProjectsData.map((project) => {
+      return (
+        <div class='bg-white rounded-xl md:w-10/12 p-10 flex flex-col  items-center justify-center gap-4 md:odd:flex-row-reverse md:flex-row md:h-96 shadow-lg '>
+          <img
+            src={project?.img}
+            class='object-cover rounded-lg md:w-1/2 shadow-md shadow-gray-400'
+          />
+
+          <div class='h-full items-start justify-center md:w-1/2 text-center gap-4'>
+            <h4 class={` font-bold text-xl md:text-2xl ${project?.textColor}`}>
+              {project?.title}
+            </h4>
+            <p class='text-gray-500 font-semibold  md:text-xl '>
+              {project?.description}
+            </p>
+            <div class='flex justify-center items-center mt-6 w-full gap-x-6'>
+              {project?.stack.map((tech) => (
+                <img title={tech.title} src={tech.img} class='h-14 w-14' />
+              ))}
+            </div>
+            <div class='flex justify-center items-center mt-6 w-full gap-x-6 font-semibold'>
+              <a
+                href='code'
+                class='flex gap-x-2 hover:scale-105 transition-all'>
+                <img src='/public/github.svg' class=' h-6 w-6' />
+                Code
+              </a>
+              <a
+                href='demo'
+                class='flex gap-x-2 hover:scale-105 transition-all'>
+                <img src='/public/demo.svg' class='h-6 w-6' />
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      )
+    })
+  }
+</section>
