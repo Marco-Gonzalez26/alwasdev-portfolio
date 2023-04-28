@@ -1,4 +1,3 @@
-import React from 'react'
 
 import { useState } from 'preact/hooks'
 import { FlavorSelector } from './FlavorSelector'
