@@ -1,7 +1,6 @@
 import { TicketFlavors } from '../../utils/data'
 
 export const FlavorSelector = ({ setActiveSelector, activeSelector }) => {
-  console.log({ activeSelector })
   return (
     <section className='flex gap-4 w-full p-4 flex-wrap justify-center items-center'>
       {TicketFlavors.map((flavor) => {

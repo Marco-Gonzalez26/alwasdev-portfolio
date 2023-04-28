@@ -2,14 +2,14 @@ import React from 'react'
 
 import { useState } from 'preact/hooks'
 import { FlavorSelector } from './FlavorSelector'
-import { Ticket } from '../Ticket'
+import { Ticket } from './Ticket'
 
 const TicketContainer = () => {
   const [activeSelector, setActiveSelector] = useState({
     title: 'React',
-    borderColor: 'border-react',
-    textColor: 'text-react',
     icon: '/react.svg',
+    border: '4px solid #53C1DE',
+    text: '#53C1DE',
     active: true
   })
 

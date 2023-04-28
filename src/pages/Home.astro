@@ -11,9 +11,9 @@ import { TechStackData } from '../utils/data'
       class='flex flex-col items-center text-center md:text-left md:items-start'>
       <h1 class='font-bold text-4xl md:text-6xl'>Front-End Developer</h1>
       <p class='md:w-3/4 text-gray-600 text-xl font-medium mt-4'>
-        Hi I’m Marco Gonzalez, <span id='desc'
+        Hi I’m Marco Gonzalez, <span id='desc' class="text-white"
           >A passionate Web Developer
-        </span>who wants to domain the world with programming based on Ecuador
+        </span>{' '} who wants to domain the world with programming based in Ecuador
         📍
       </p>
 
@@ -50,11 +50,11 @@ import { TechStackData } from '../utils/data'
 </Container>
 
 <script type='module'>
-  import { annotate } from '../../node_modules/rough-notation'
+import { annotate } from 'https://unpkg.com/rough-notation?module';
 
   const descAnnotation = annotate(document.querySelector('#desc'), {
     type: 'highlight', 
-    color: '#fd0'
+    color: '#00F'
   })
 
   descAnnotation.show()

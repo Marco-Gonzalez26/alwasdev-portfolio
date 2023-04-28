@@ -56,22 +56,22 @@ export const TicketFlavors = [
   {
     title: 'React',
     icon: '/react.svg',
-    borderColor: 'border-react',
-    textColor: 'text-react',
-    active: false
+    border: '4px solid #53C1DE',
+    text: '#53C1DE',
+    active: true
   },
   {
     title: 'NextJS',
     icon: '/nextjs.svg',
-    borderColor: 'border-black',
-    textColor: 'text-black',
+    border: '4px solid #000',
+    text: '#000',
     active: false
   },
   {
     title: 'Angular',
     icon: '/angular.svg',
-    borderColor: 'border-angular',
-    textColor: 'text-angular',
-    active: true
+    border: '4px solid #DD0031',
+    text: '#DD0031',
+    active: false
   }
 ]
