@@ -5,6 +5,13 @@ export const NavLinks = [
   { text: 'Contact', link: '#contact' }
 ]
 
+export const MobileNavLinks = [
+  { img: '/home-icon.svg', link: '#home' },
+  { img: '/user-icon.svg', link: '#about' },
+  { img: '/project-icon.svg', link: '#projects' },
+  { img: '/contact-icon.svg', link: '#contact' }
+]
+
 export const TechStackData = [
   { title: 'Javascript', img: '/js.svg' },
   { title: 'Typescript', img: '/ts.svg' },
