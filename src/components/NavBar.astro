@@ -1,11 +1,16 @@
 ---
-import { NavLinks } from '../utils/data'
+import { MobileNavLinks, NavLinks } from '../utils/data'
 ---
 
+<img
+  class='fixed w-6 z-30 m-3 top-0 right-0 cursor-pointer md:hidden'
+  src='/bars-icon.svg'
+  id='bars'
+/>
 <nav
-  class='w-full bg-white p-4 fixed top-0 flex items-center justify-between shadow-md z-50'>
-  <a class='font-bold text-xl' href='#home'>always.dev</a>
-  <div class='flex justify-center items-center gap-x-4'>
+  class='p-1 md:p-6 fixed flex items-center justify-between z-20 flex-col right-0 h-full md:bg-white md:h-2 md:flex-row md:top-0 md:w-full'>
+  <a class='font-bold text-xl hidden md:block' href='#home'>always.dev</a>
+  <div class='hidden justify-center items-center gap-x-4 md:flex'>
     {
       NavLinks.map((item) => {
         return (
@@ -16,4 +21,45 @@ import { NavLinks } from '../utils/data'
       })
     }
   </div>
+  <div
+    id='mobile-navbar'
+    class='flex flex-col md:hidden h-full items-center justify-center gap-y-8 shadow-md bg-white p-2 rounded transition-all translate-x-[1000px] z-50'>
+    <img
+      class='w-6 absolute top-0 m-2 cursor-pointer'
+      src='/x-icon.svg'
+      id='x'
+    />
+
+    {
+      MobileNavLinks.map((item) => {
+        return (
+          <a href={item.link}>
+            <img src={item.img} class='w-6' />
+          </a>
+        )
+      })
+    }
+  </div>
 </nav>
+
+<script type='module'>
+  let open = false
+  const mobileNavbar = document.querySelector('#mobile-navbar')
+  const barsIcon = document.querySelector('#bars')
+
+  const openNavbar = () => {
+    
+    if (open) {
+      open = false
+      barsIcon.style.display = ''
+      mobileNavbar.style.transform = 'translateX(1000px)'
+    } else {
+      open = true
+      barsIcon.style.display = 'none'
+      mobileNavbar.style.transform = 'translateX(0)'
+
+    }
+  }
+  document.querySelector('#bars').addEventListener('click', openNavbar)
+  document.querySelector('#x').addEventListener('click', openNavbar)
+</script>
