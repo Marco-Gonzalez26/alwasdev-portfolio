@@ -23,42 +23,63 @@ export const TechStackData = [
 ]
 
 export const ProjectsData = [
-  {
-    title: 'ALWAYSPACE',
-    img: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80',
-    textColor: 'text-react',
-    description:
-      'A modern and beautiful website made with Astro, React and The Astronomical Photo of The Day of NASA. In this website you can discover the Astronomical photo of the day and you can search the astronomical photo of your birth date. ',
-    stack: [
-      { title: 'React', img: '/react.svg' },
-      { title: 'Tailwind', img: '/tailwind.svg' }
-    ]
-  },
-  {
-    title: 'NETFLIX CLONE',
-    img: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80',
-    textColor: 'text-angular',
-    description:
-      'A modern and beautiful website made with Astro, React and The Astronomical Photo of The Day of NASA. In this website you can discover the Astronomical photo of the day and you can search the astronomical photo of your birth date. ',
-    stack: [
-      { title: 'React', img: '/angular.svg' },
-      { title: 'Tailwind', img: '/tailwind.svg' }
-    ]
-  },
   ,
   {
-    title: 'ALWAYS.DEV BLOG',
-    img: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80',
+    title: 'AlWAYS-CHAT',
+    img: '/alwayschat.png',
     textColor: 'text-black',
     description:
-      'A modern and beautiful website made with Astro, React and The Astronomical Photo of The Day of NASA. In this website you can discover the Astronomical photo of the day and you can search the astronomical photo of your birth date. ',
+      'This is a chat website made with next 13 with app directory, tailwind, next auth, upstash and pusher, lets chat!, this project was made with the guide of Josh Tried Coding and I added some features by myself like sending images and a beautiful responsive layout',
     stack: [
       { title: 'NextJS', img: '/nextjs.svg' },
       { title: 'Tailwind', img: '/tailwind.svg' }
-    ]
+    ],
+    tag: ['next', 'all', 'react'],
+    demo: 'https://always-chat.vercel.app/login',
+    code: 'https://github.com/Marco-Gonzalez26/always-chat'
+  },
+  {
+    title: 'ALWAYSPACE',
+    img: '/alwayspace.png',
+    textColor: 'text-orange-500',
+    description:
+      'A modern and beautiful website made with Astro, React and The Astronomical Photo of The Day of NASA. In this website you can discover the Astronomical photo of the day and you can search the astronomical photo of your birth date. ',
+    stack: [{ title: 'Astro', img: '/astro.svg' }],
+    tag: ['astro', 'all'],
+    demo: 'https://alwayspace.vercel.app/',
+    code: 'https://github.com/Marco-Gonzalez26/alwayspace'
+  },
+  {
+    title: 'NETFLIX HOME PAGE CLONE',
+    img: '/angular-netflix.png',
+    textColor: 'text-angular',
+    description:
+      'This is my first app with Angular, this is a little clone of the home page of Netflix, with swipperjs ',
+    stack: [
+      { title: 'Angular', img: '/angular.svg' },
+      { title: 'Tailwind', img: '/tailwind.svg' }
+    ],
+    tag: ['angular', 'all'],
+    demo: 'https://angular-netflix-clone-iota.vercel.app/',
+    code: 'https://github.com/Marco-Gonzalez26/angular-netflix-clone'
+  },
+  {
+    title: 'AlWAYS-TWEET',
+    img: '/alwaystweet.png',
+    textColor: 'text-black',
+    description:
+      'This is a little clone of twitter ui, the original idea is from @midudev but I added my own features like: upload images on mobile devices, multi-image upload, profile pages with all you tweets.',
+    stack: [
+      { title: 'NextJS', img: '/nextjs.svg' },
+      { title: 'Tailwind', img: '/tailwind.svg' }
+    ],
+    tag: ['next', 'all', 'react'],
+    demo: 'https://alwaystweet.vercel.app/login',
+    code: 'https://github.com/Marco-Gonzalez26/alwaystweet'
   }
 ]
 
+export const filters = ['all', 'react', 'angular', 'next', 'astro']
 export const TicketFlavors = [
   {
     title: 'React',

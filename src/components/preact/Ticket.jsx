@@ -36,7 +36,7 @@ export const Ticket = ({ activeSelector }) => {
       <section class='[perspective:1500px] relative' id='wrapper'>
         <article
           id='ticket'
-          class='rounded-lg w-[300px] aspect-[7/8] lg:aspect-[18/9] border-4 lg:w-[800px] border-opacity-50 relative p-4 overflow-hidden bg-white/50 backdrop-blur-[2px] flex flex-col items-start'
+          class='rounded-lg w-[300px] aspect-[7/8] lg:aspect-[18/9] border-4 lg:w-[800px] border-opacity-50 relative p-4 overflow-hidden bg-white/50 backdrop-blur-[2px] flex flex-col items-start gap-y-6'
           style={{
             border: activeSelector.border
           }}>
