@@ -9,8 +9,8 @@ export const FlavorSelector = ({ setActiveSelector, activeSelector }) => {
             className={
               activeSelector.title.toLowerCase() ===
               flavor.title.toLocaleLowerCase()
-                ? 'w-12 scale-150 transition-all'
-                : 'w-12 transition-all hover:opacity-50'
+                ? 'w-12 scale-150 transition-all '
+                : 'w-12 transition-all hover:opacity-50 cursor-pointer'
             }
             src={flavor.icon}
             title={flavor.title}

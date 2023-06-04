@@ -23,7 +23,7 @@ import { MobileNavLinks, NavLinks } from '../utils/data'
   </div>
   <div
     id='mobile-navbar'
-    class='flex flex-col md:hidden h-full items-center justify-center gap-y-8 shadow-md bg-white p-2 rounded transition-all translate-x-[1000px] z-50'>
+    class='flex flex-col lg:hidden h-full items-center justify-center gap-y-8 shadow-md bg-white p-2 fixed rounded transition-all right-0 translate-x-[1000px] z-50'>
     <img
       class='w-6 absolute top-0 m-2 cursor-pointer '
       src='/x-icon.svg'
@@ -33,7 +33,7 @@ import { MobileNavLinks, NavLinks } from '../utils/data'
     {
       MobileNavLinks.map((item) => {
         return (
-          <a href={item.link}>
+          <a href={item.link} >
             <img src={item.img} class='w-6' />
           </a>
         )
@@ -52,12 +52,11 @@ import { MobileNavLinks, NavLinks } from '../utils/data'
     if (open) {
       open = false
       barsIcon.style.display = ''
-      mobileNavbar.style.transform = 'translateX(1000px)'
+      mobileNavbar.style.transform = 'translateX(250px)'
     } else {
       open = true
       barsIcon.style.display = 'none'
-      mobileNavbar.style.transform = 'translateX(0)'
-
+      mobileNavbar.style.transform = 'translateX(0px)'
     }
   }
   document.querySelector('#bars').addEventListener('click', openNavbar)

@@ -1,5 +1,5 @@
 
-import { useState } from 'preact/hooks'
+import { useState } from 'react'
 import { FlavorSelector } from './FlavorSelector'
 import { Ticket } from './Ticket'
 
