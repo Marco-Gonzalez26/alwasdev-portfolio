@@ -1,5 +1,4 @@
 import { useEffect } from 'react'
-
 export const Ticket = ({ activeSelector }) => {
   useEffect(() => {
     const $ = (selector) => document.querySelector(selector)
@@ -36,7 +35,7 @@ export const Ticket = ({ activeSelector }) => {
       <section class='[perspective:1500px] relative' id='wrapper'>
         <article
           id='ticket'
-          className='rounded-lg w-[300px] aspect-[7/8] lg:aspect-[18/9] border-4 lg:w-[800px] border-opacity-50 relative p-4 overflow-hidden bg-white/50 backdrop-blur-[2px] flex flex-col items-start gap-y-6'
+          className='rounded-lg w-[300px] aspect-[7/8] lg:aspect-[18/9] border-4 md:width-[500px] md:aspect-[16/8] lg:w-[800px] border-opacity-50 relative p-4 overflow-hidden bg-white/50 backdrop-blur-[2px] flex flex-col items-start gap-y-6'
           style={{
             border: activeSelector.border
           }}>
@@ -53,6 +52,7 @@ export const Ticket = ({ activeSelector }) => {
             <img src='/instagram.svg' className='w-10 lg:w-16' />
             always.devv
           </a>
+
           <img
             src={activeSelector.icon}
             className='absolute bottom-0 -right-36 lg:top-12 -z-10 lg:w-2/3 opacity-20 transition-all'

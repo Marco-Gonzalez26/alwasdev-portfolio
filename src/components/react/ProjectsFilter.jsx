@@ -32,7 +32,7 @@ export function ProjectsFilter() {
             {projects
               .filter((project) => project.tag.includes(filter))
               .map((project) => (
-                <Project project={project} />
+                <Project project={project} key={project.title}/>
               ))}
       <p className='text-center text-lg font-semibold text-gray-700'>
         I'm adding all my projects really soon! 😁
