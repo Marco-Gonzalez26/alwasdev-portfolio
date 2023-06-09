@@ -23,7 +23,6 @@ export const TechStackData = [
 ]
 
 export const ProjectsData = [
-  ,
   {
     title: 'AlWAYS-CHAT',
     img: '/alwayschat.png',

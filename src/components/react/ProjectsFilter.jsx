@@ -1,10 +1,16 @@
 import { useState } from 'react'
 import { ProjectsData, filters } from '../../utils/data'
 import { Project } from './Project'
-import { CSSTransition, SwitchTransition } from 'react-transition-group'
+import {
+  CSSTransition,
+
+  TransitionGroup
+} from 'react-transition-group'
+
 export function ProjectsFilter() {
   const [projects, setProjects] = useState(ProjectsData)
   const [filter, setFilter] = useState('all')
+
   return (
     <>
       <div className='gap-2 flex justify-center'>
@@ -21,26 +27,21 @@ export function ProjectsFilter() {
           </p>
         ))}
       </div>
-      <SwitchTransition>
-        <CSSTransition
-          key={filter}
-          classNames='fade'
-          addEndListener={(node, done) =>
-            node.addEventListener('transitionend', done, false)
-          }>
-          <>
-            {projects
-              .filter((project) => project.tag.includes(filter))
-              .map((project) => (
-                <Project project={project} key={project.title}/>
-              ))}
-      <p className='text-center text-lg font-semibold text-gray-700'>
-        I'm adding all my projects really soon! 😁
-      </p>
-          </>
-        </CSSTransition>
-      </SwitchTransition>
 
+      <TransitionGroup className='w-full flex justify-center flex-col items-center gap-y-8'>
+        {[...projects]
+          .filter((project) => project.tag.includes(filter))
+          .map((project) => (
+            <CSSTransition
+              key={project.title}
+              classNames='fade'
+              addEndListener={(node, done) =>
+                node.addEventListener('transitionend', done, false)
+              }>
+              <Project project={project} key={project.title} />
+            </CSSTransition>
+          ))}
+      </TransitionGroup>
     </>
   )
 }

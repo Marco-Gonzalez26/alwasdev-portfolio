@@ -32,7 +32,7 @@ export const Ticket = ({ activeSelector }) => {
 
   return (
     <>
-      <section class='[perspective:1500px] relative' id='wrapper'>
+      <section className='[perspective:1500px] relative' id='wrapper'>
         <article
           id='ticket'
           className='rounded-lg w-[300px] aspect-[7/8] lg:aspect-[18/9] border-4 md:width-[500px] md:aspect-[16/8] lg:w-[800px] border-opacity-50 relative p-4 overflow-hidden bg-white/50 backdrop-blur-[2px] flex flex-col items-start gap-y-6'

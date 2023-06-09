@@ -6,6 +6,7 @@ export const FlavorSelector = ({ setActiveSelector, activeSelector }) => {
       {TicketFlavors.map((flavor) => {
         return (
           <img
+            key={flavor.text}
             className={
               activeSelector.title.toLowerCase() ===
               flavor.title.toLocaleLowerCase()

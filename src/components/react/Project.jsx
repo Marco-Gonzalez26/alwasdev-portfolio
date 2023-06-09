@@ -1,6 +1,6 @@
 export function Project({ project }) {
   return (
-    <div class='bg-white rounded-xl lg:w-3/4 p-6 flex flex-col  items-center justify-center gap-4 transition-all h-full lg:odd:flex-row-reverse lg:flex-row  shadow-lg'>
+    <div class='bg-white rounded-xl lg:w-3/4 p-6 flex flex-col  items-center justify-center gap-4 transition-all h-full lg:odd:flex-row-reverse lg:flex-row  shadow-lg min-h-[400px]'>
       <img
         src={project?.img}
         class='object-cover rounded-lg w-10/12 lg:w-1/2 shadow-md shadow-gray-400'
@@ -15,7 +15,12 @@ export function Project({ project }) {
         </p>
         <div class='flex justify-center items-center mt-6 w-full gap-x-6'>
           {project?.stack.map((tech) => (
-            <img title={tech.title} src={tech.img} class='h-14 w-14' />
+            <img
+              title={tech.title}
+              src={tech.img}
+              class='h-14 w-14'
+              key={tech.title}
+            />
           ))}
         </div>
         <div class='flex justify-center items-center mt-6 w-full gap-x-6 font-semibold'>
