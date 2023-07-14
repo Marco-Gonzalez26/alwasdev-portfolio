@@ -24,7 +24,8 @@ export const TechStackData = [
 
 export const ProjectsData = [
   {
-    title: 'AlWAYS-CHAT',
+    id: 'always-chat',
+    title: 'ALWAYS-CHAT',
     img: '/alwayschat.png',
     textColor: 'text-black',
     description:
@@ -38,6 +39,8 @@ export const ProjectsData = [
     code: 'https://github.com/Marco-Gonzalez26/always-chat'
   },
   {
+    id: 'always-space',
+
     title: 'ALWAYSPACE',
     img: '/alwayspace.png',
     textColor: 'text-orange-500',
@@ -49,6 +52,8 @@ export const ProjectsData = [
     code: 'https://github.com/Marco-Gonzalez26/alwayspace'
   },
   {
+    id: 'netflix-homepage-clone',
+
     title: 'NETFLIX HOME PAGE CLONE',
     img: '/angular-netflix.png',
     textColor: 'text-angular',
@@ -63,7 +68,9 @@ export const ProjectsData = [
     code: 'https://github.com/Marco-Gonzalez26/angular-netflix-clone'
   },
   {
-    title: 'AlWAYS-TWEET',
+    id: 'always-tweet',
+
+    title: 'ALWAYS-TWEET',
     img: '/alwaystweet.png',
     textColor: 'text-black',
     description:

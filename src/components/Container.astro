@@ -1,9 +1,9 @@
 ---
-const { bgClass, id } = Astro.props
+const { bgClass, id, orientation = 'flex-col-reverse' } = Astro.props
 ---
 
 <section
-  id={id}
-  class={`${bgClass} flex min-h-screen lg:flex-row flex-col-reverse px-8 py-16   items-center justify-center  lg:py-8 lg:px-20`}>
+  class={`${bgClass} flex min-h-screen lg:flex-row ${orientation} px-8 py-16   items-center justify-center  lg:py-8 lg:px-20`}
+  id={id}>
   <slot />
 </section>
